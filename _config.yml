@@ -1,0 +1,21 @@
+# Site settings
+title: Diana and Alex Wedding
+# email: youremailaddress@gmail.com
+description: Come join us on August 25th at Lago Even Park for our celebration
+# baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Social settings
+# 500px_url:
+# facebook_url: https://facebook.com
+# github_url:
+# gitlab_url: https://gitlab.com/u/
+# googleplus_url: https://plus.google.com/u/0/
+# instagram_url: https://instagram.com
+# linkedin_url: https://www.linkedin.com/in/
+# pinterest_url:
+# slack_url:
+# twitter_url: https://twitter.com/
+
+# Build settings
+markdown: kramdown
