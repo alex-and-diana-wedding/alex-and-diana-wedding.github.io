@@ -54,10 +54,22 @@
 	html {
 		background-color:		_palette(accent2, bg);
 		background-attachment:	fixed,						fixed;
-		background-image:		url('images/overlay.png'),	url('../../assets/images/bg.jpg');
-		background-position:	top left,					center center;
-		background-repeat:		repeat,						none;
+		// background-image:		url('images/overlay.png'),	url('../../assets/images/bg-wide.jpg');
+		background-position:	top center,					center center;
+		background-repeat:		repeat,						no-repeat;
 		background-size:		auto,						cover;
+	}
+
+	@media (max-width: 480px) {
+		html {
+			background-image: url("images/overlay.png"), url("../../assets/images/bg-mob.jpg");
+		}
+	}
+	
+	@media (min-width: 480px) {
+		html {
+			background-image: url("images/overlay.png"), url("../../assets/images/bg-wide.jpg");
+		}
 	}
 
 	html {
@@ -363,7 +375,7 @@
 			text-align: center;
 
 			h1, h2, h3, h4, h5, h6 {
-				color: #ff5b00;
+				color: #ff4d04 !important;
 				position: relative;
 
 				&:after {
@@ -1096,7 +1108,7 @@
 				font-size: 3em;
 				line-height: 1.25em;
 				margin: 0;
-				color: #ff5b00 !important;
+				color: #ff4d04 !important;
 
 				&:after {
 					margin-top: 0.5em;

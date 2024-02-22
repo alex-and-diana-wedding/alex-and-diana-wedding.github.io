@@ -5,6 +5,15 @@ description: Come join us on August 25th at Lago Event Park for our celebration
 # baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
+defaults:
+  -
+    scope:
+      type: pages
+      path: _pages
+    values:
+      is_post: false
+      layout: default
+
 # Social settings
 # 500px_url:
 # facebook_url: https://facebook.com

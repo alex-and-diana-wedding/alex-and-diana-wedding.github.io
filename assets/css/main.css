@@ -1310,13 +1310,26 @@
 /* Basic */
 
 	html {
-		background-color: #313a3d;
+		background-color: #ffffff;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../assets/images/bg.jpg");
-		background-position: top left,					center center;
-		background-repeat: repeat,						none;
+		/* background-image: url("images/overlay.png"), url("../../assets/images/bg-mob.jpg"); */
+		background-position: top center,			    center center;
+		background-repeat: repeat,						no-repeat;
 		background-size: auto,						cover;
 	}
+
+	@media (max-width: 480px) {
+		html {
+			background-image: url("images/overlay.png"), url("../../assets/images/bg-mob.jpg");
+		}
+	}
+	
+	@media (min-width: 480px) {
+		html {
+			background-image: url("images/overlay.png"), url("../../assets/images/bg-wide.jpg");
+		}
+	}
+
 
 	html.is-loading body *, html.is-loading body *:before, html.is-loading body *:after {
 		-moz-animation: none !important;
